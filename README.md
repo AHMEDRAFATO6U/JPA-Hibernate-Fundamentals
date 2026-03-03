@@ -71,17 +71,3 @@ This project is built for deep understanding of how Hibernate works internally.
 
 ---
 
-## 🚀 Example: JPQL Group By
-
-```java
-String jpql = """
-        SELECT p.name, AVG(p.price)
-        FROM Product p
-        GROUP BY p.name
-        """;
-
-TypedQuery<Object[]> q = em.createQuery(jpql, Object[].class);
-
-q.getResultList().forEach(objects -> {
-    System.out.println(objects[0] + " " + objects[1]);
-});
