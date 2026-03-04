@@ -17,6 +17,8 @@ This repository contains practical examples explaining:
 - Fetch Join & N+1 Problem
 - DTO Projection
 - EntityManager & Persistence Context
+- Native Query
+- Join and Inner Join
 
 This project is built for deep understanding of how Hibernate works internally.
 
